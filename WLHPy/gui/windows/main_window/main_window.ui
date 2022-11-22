@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>wlh_main_window</class>
+ <widget class="QMainWindow" name="wlh_main_window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>808</width>
+    <height>957</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="wlh_central_widget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QMdiArea" name="wlh_mdi_area"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="wlh_menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>808</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_project">
+    <property name="title">
+     <string>Projekt</string>
+    </property>
+    <addaction name="act_mn_project_new_project"/>
+    <addaction name="separator"/>
+    <addaction name="act_mn_project_open_project"/>
+    <addaction name="act_mn_project_last_projects"/>
+    <addaction name="separator"/>
+    <addaction name="act_mn_project_project_settings"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuInhalt">
+    <property name="title">
+     <string>Inhalt</string>
+    </property>
+    <addaction name="act_tb_mn_structure"/>
+    <addaction name="separator"/>
+    <addaction name="act_tb_mn_characters"/>
+    <addaction name="act_tb_mn_locations"/>
+    <addaction name="act_tb_mn_Items"/>
+    <addaction name="separator"/>
+    <addaction name="act_tb_mn_status"/>
+    <addaction name="act_tb_mn_relationships"/>
+   </widget>
+   <widget class="QMenu" name="menuProgramm">
+    <property name="title">
+     <string>Programm</string>
+    </property>
+    <addaction name="act_mn_project_app_settings"/>
+    <addaction name="act_mn_app_user"/>
+    <addaction name="separator"/>
+    <addaction name="act_mn_project_quit"/>
+   </widget>
+   <addaction name="menuProgramm"/>
+   <addaction name="menu_project"/>
+   <addaction name="menuInhalt"/>
+  </widget>
+  <widget class="QStatusBar" name="wlh_statusbar"/>
+  <widget class="QToolBar" name="wlh_toolbar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="act_tb_project"/>
+   <addaction name="separator"/>
+   <addaction name="act_tb_mn_structure"/>
+   <addaction name="separator"/>
+   <addaction name="act_tb_mn_characters"/>
+   <addaction name="act_tb_mn_locations"/>
+   <addaction name="act_tb_mn_Items"/>
+   <addaction name="separator"/>
+   <addaction name="act_tb_mn_status"/>
+   <addaction name="act_tb_mn_relationships"/>
+  </widget>
+  <action name="act_mn_project_new_project">
+   <property name="text">
+    <string>Neues Projekt</string>
+   </property>
+  </action>
+  <action name="act_mn_project_open_project">
+   <property name="text">
+    <string>Projekt öffnen</string>
+   </property>
+  </action>
+  <action name="act_mn_project_last_projects">
+   <property name="text">
+    <string>Letzte Projekte</string>
+   </property>
+  </action>
+  <action name="act_mn_project_project_settings">
+   <property name="text">
+    <string>Projekteinstellungen</string>
+   </property>
+  </action>
+  <action name="act_mn_project_app_settings">
+   <property name="text">
+    <string>Programmeinstellungen</string>
+   </property>
+  </action>
+  <action name="act_mn_project_quit">
+   <property name="text">
+    <string>Ende</string>
+   </property>
+  </action>
+  <action name="act_tb_project">
+   <property name="text">
+    <string>Projekt</string>
+   </property>
+   <property name="toolTip">
+    <string>Einstellungen zum Projekt</string>
+   </property>
+  </action>
+  <action name="act_tb_mn_characters">
+   <property name="text">
+    <string>Charactere</string>
+   </property>
+   <property name="toolTip">
+    <string>Charakter-Verwaltung</string>
+   </property>
+  </action>
+  <action name="act_tb_mn_locations">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Orte</string>
+   </property>
+   <property name="toolTip">
+    <string>Verwaltung der Orte</string>
+   </property>
+  </action>
+  <action name="act_tb_mn_Items">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Gegenstände</string>
+   </property>
+   <property name="toolTip">
+    <string>Verwaltung der Gegenstände</string>
+   </property>
+  </action>
+  <action name="act_tb_mn_status">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Zustände</string>
+   </property>
+  </action>
+  <action name="act_tb_mn_relationships">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Beziehungen</string>
+   </property>
+  </action>
+  <action name="act_mn_app_user">
+   <property name="text">
+    <string>Benutzer</string>
+   </property>
+  </action>
+  <action name="act_tb_mn_structure">
+   <property name="text">
+    <string>Struktur</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

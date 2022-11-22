@@ -1,0 +1,10 @@
+{
+  "Hello_world": "Hallo Welt",
+  "unread_mail": {
+    "zero": "You do not have any unread mail",
+    "one": "You have an unread new mail",
+    "few": "You only have %{count} unread mails.",
+    "many": "You have %{count} unread mails."
+  }
+}
+
